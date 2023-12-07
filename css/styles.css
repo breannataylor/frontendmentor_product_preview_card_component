@@ -1,0 +1,170 @@
+:root {
+    /* primary colors */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* neutral colors */
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-greyish-blue:hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    /* fonts families - bold weight = 700, normal weight = 500 
+       paragraph font: 14px
+    */
+    --ff-base: 'Montserrat', sans-serif;
+    --ff-accent: 'Fraunces', serif;
+    
+    /* font weights */
+    --fw-normal: 500;
+    --fw-bold: 700;
+}
+
+  /*
+    2. Remove default margin
+  */
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+  
+  /* WCAG Text Spacing criteria says that line height should be
+   * at least 1.5. line height is what gives spacing between 
+   * lines of text. */
+  body {
+    line-height: 1.7;
+  }
+  img, picture {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  button {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+h1, h2, h3 {
+  line-height: 1;
+}
+
+
+body {     
+    font-family: var(--ff-base);
+    font-weight: var(--fw-normal);
+    font-size: .8rem;
+    color: var(--dark-greyish-blue);
+    background-color: var(--cream);
+  
+    /* center the  */
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+  }
+
+
+/* product styling */
+.product {
+  /* hide overflowing content */
+  display: grid;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: var(--white);
+  max-width: 600px;
+  /* line-height: 1.7; */
+}
+
+@media screen  and (min-width: 600px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.product-content {
+  display: grid;
+  gap: .5rem;
+  padding: 2rem;
+}
+
+.prices {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.product-type {
+  text-transform: uppercase;
+  letter-spacing: .35rem;
+  padding-top: .5rem;
+  font-size: .75rem;
+}
+
+.product-name {
+  font-family: var(--ff-accent);
+  color: var(--very-dark-blue);
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+/* price styling */
+
+.discount-price {
+  font-family: var(--ff-accent);
+  font-size: 2rem;
+  color: var(--dark-cyan);
+}
+
+.original-price {
+  text-decoration: line-through;
+}
+
+/* button styling */
+
+.button {
+  /* base design */
+  display: inline-flex;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  width: 100%;
+  margin: .5rem;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+
+  /* design */
+  cursor: pointer;
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem 1.5rem;
+  font-size: .95rem;
+  
+}
+
+.button[data-icon="cart"]::before {
+  content:" ";
+  background-image: url("../images/icon-cart.svg");
+  width: 15px;
+  height: 16px;
+}
+
+.button:is( :hover, :focus)  {
+  background-color: var(--very-dark-blue);
+}
