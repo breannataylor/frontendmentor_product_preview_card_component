@@ -11,17 +11,15 @@
     /* fonts families - bold weight = 700, normal weight = 500 
        paragraph font: 14px
     */
-    --ff-base: 'Montserrat', sans-serif;
-    --ff-accent: 'Fraunces', serif;
+    --font-base: 'Montserrat', sans-serif;
+    --font-accent: 'Fraunces', serif;
     
     /* font weights */
-    --fw-normal: 500;
-    --fw-bold: 700;
+    --font-normal: 500;
+    --font-bold: 700;
 }
 
-  /*
-    2. Remove default margin
-  */
+  /* remove default margins */
   *,
 *::before,
 *::after {
@@ -37,24 +35,16 @@
   }
   
   /* WCAG Text Spacing criteria says that line height should be
-   * at least 1.5. line height is what gives spacing between 
-   * lines of text. */
+   * at least 1.5. */
   body {
-    line-height: 1.7;
+    line-height: 1.5;
   }
   img, picture {
     display: block;
     max-width: 100%;
   }
-  /*
-    6. Remove built-in form typography styles
-  */
-  button {
-    font: inherit;
-  }
-  /*
-    7. Avoid text overflows
-  */
+  
+  /* avoid text overflows */
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
@@ -65,13 +55,13 @@ h1, h2, h3 {
 
 
 body {     
-    font-family: var(--ff-base);
-    font-weight: var(--fw-normal);
+    font-family: var(--font-base);
+    font-weight: var(--font-normal);
     font-size: .8rem;
     color: var(--dark-greyish-blue);
     background-color: var(--cream);
   
-    /* center the  */
+    /* center the component on the screen  */
     display: grid;
     place-content: center;
     margin: 1rem;
@@ -80,13 +70,12 @@ body {
 
 /* product styling */
 .product {
-  /* hide overflowing content */
   display: grid;
+    /* hide overflowing content */
   overflow: hidden;
   border-radius: 1rem;
   background-color: var(--white);
   max-width: 600px;
-  /* line-height: 1.7; */
 }
 
 @media screen  and (min-width: 600px) {
@@ -117,9 +106,9 @@ body {
 }
 
 .product-name {
-  font-family: var(--ff-accent);
+  font-family: var(--font-accent);
   color: var(--very-dark-blue);
-  font-weight: var(--fw-bold);
+  font-weight: var(--font-bold);
   font-size: 2rem;
   padding-right: 1rem;
 }
@@ -127,7 +116,7 @@ body {
 /* price styling */
 
 .discount-price {
-  font-family: var(--ff-accent);
+  font-family: var(--font-accent);
   font-size: 2rem;
   color: var(--dark-cyan);
 }

@@ -47,15 +47,13 @@ Users should be able to:
 - Mobile-first workflow
 - Google Fonts
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
-- Deepened understanding of Semantic HTML markup: I am a huge proponent of information being accessible, so I have taken to really learning about semantic HTML. I spent a good amount of time on the Web Content Accessibility Guidelines website checking for ways in which I should write up each componenet.
+- Media queries: Media queries are the foundation of responsive web development. Before this project I wasn't really familiar with media queries, so my sites were all very much static. Now that I've learned more about media queries, I can make my pages give each user the best user experience - which is sort of the whole point for me.
 
 - Understanding and creating a CSS Reset: A solid CSS reset reduces inconsistencies between different browsers by giving the page it's own defaults for various aspects of the page. I learned a lot about margins, line heights, and font sizes with while creating mine.
 
-- How to add icons with the data attribute: The shopping cart is an icon, and those are small images that aren't necessary in the layout of the page. Originally, I put in a span, but decided to go with a custom data-\* attribute to keep it out of the site layout.
+- How to add icons with the data attribute: The shopping cart is an icon, and those are small images that aren't necessary in the layout of the page. Originally, I put in a span, but decided to go with a custom data- attribute to keep it out of the site layout.
 
 - Pseudo-classes and functional pseudo-classes: I learned a good bit about action and functional pseudo classes - of course I've used :hover before, but I never really knew what it was technically called. I am not a fan of cumbersome code, and wanted to write my code for :hover, and :focus at the same time - which led me to the is() functional pseudo-class.
 
@@ -63,7 +61,7 @@ Users should be able to:
 
 I definitely want to continue learning about WCAG and really perfecting my semantic HTML skills so I can develop web apps that aren't just beautiful, but also accessible to as many people as possible.
 
-I also want to really perfect flexbox and grid. I know that intuition is honed through praxis, so I am interested in further honing my skills with it.
+I also want to really perfect flexbox, grid, and media queries. I know that intuition is honed through praxis, so I am interested in further honing my skills with these particular aspects of design, as I see them as the foundation of well made, responsive websites.
 
 ### Useful resources
 
@@ -76,7 +74,3 @@ I also want to really perfect flexbox and grid. I know that intuition is honed t
 - LinkedIn - [BreAnna Taylor](https://www.linkedin.com/in/breanna-taylor-841468155/)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Github- [BreAnna Taylor](https://github.com/breannataylor)
-
-## Acknowledgments
-
-I definitely have to give props to Kevin Powell (https://www.youtube.com/@KevinPowell). His videos really helped me understand a lot of concepts that I was still hazy on.
