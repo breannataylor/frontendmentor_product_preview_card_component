@@ -28,13 +28,15 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop Screenshot](./final_design/final_%20desktop_image.png)
-![Mobile Screenshot](./final_design/final_mobile_image.png)
+
 ![Active Screenshot](./final_design/final_desktop_active.png)
+
+![Mobile Screenshot](./final_design/final_mobile_image.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/breannataylor/frontendmentor_product_preview_card_component)
+- Live Site URL: [Add live site URL here](https://breannataylor.github.io/frontendmentor_product_preview_card_component/)
 
 ## My process
 
